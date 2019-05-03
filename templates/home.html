@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Lounge - Hangout with Strangers!</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark fixed-top">
+	<a class="navbar-brand mx-auto" href="#"><img src="{{url_for('static', filename='logo-cropped.png')}}" alt="the lounge" height="8%" width="8%"></a>
+</nav>
+
+<div class="video-background">
+	<div class="video-wrap">
+		<div id="video">
+			<video id="backgroud-video" autoplay="" loop="" muted="" playsinline>
+				<source src="{{url_for('static', filename='stars.mp4')}}" type="video/mp4">
+			</video>
+		</div>
+	</div>
+</div>
+
+<div class="caption text-center">
+	<h1>Welcome to <i>the lounge</i></h1>
+    <h3>Hangout with Strangers!</h3>
+    <a class="btn btn-outline-light btn-lg" href="{{url_for('chatroom')}}">ENTER THE LOUNGE</a>
+</div>
+</body>
+</html>

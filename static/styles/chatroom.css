@@ -1,0 +1,66 @@
+.space {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+  
+  .left {
+  width: 70%;
+	left: 0;
+  }
+
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+   
+  .right {
+  width: 30%;
+	right: 0;
+	background-color: #aaf442be;
+	}
+	
+	body#chatbody {
+		background-color: darkslategray;
+		color: #ffffff;
+	}
+
+	.message {
+		color: #ffffff;
+		background-color: darkslategray;
+		text-shadow: .1rem .1rem .8rem black;
+	}
+
+	.banner {
+		position: absolute;
+		top: 30%;
+		width: 100%;
+		color: #ffffff;
+	}
+
+	h1#chat {
+		font-size: 2.4rem;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-shadow: .1rem .1rem .8rem black;
+		color: #ffffff;
+	}
+	
+	.banner h4 {
+		font-size: 1.6rem;
+		text-shadow: .1rem .1rem .8rem black;
+		padding-bottom: 1.6rem;
+		color: #ffffff;
+	}
